@@ -1,0 +1,118 @@
+<style>
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .option {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .option:not(.selected):hover {
+            background-color: #f0f0f0;
+        }
+
+        .selected {
+            background-color: #007acc;
+            color: white;
+        }
+
+        .correct {
+            background-color: green;
+            color: white;
+            transition: background-color 0.4s ease-in-out;
+        }
+
+        .wrong {
+            background-color: red;
+            color: white;
+            transition: background-color 0.4s ease-in-out;
+        }
+
+        #resetButton {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        #resetButton:hover {
+            background-color: #d32f2f;
+        }
+
+        #submitBtn {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+      #submitBtn:hover {
+            background-color: #d32f2f;
+        }
+
+        /* Popup Styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 999;
+        }
+
+        .popup h2 {
+            text-align: center;
+        }
+
+        .popup p {
+            margin-bottom: 10px;
+        }
+
+        .popup-btns {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .popup-btns button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        #popupClose {
+            background-color: #f44336;
+        }
+
+        #popupClose:hover {
+            background-color: #d32f2f;
+        }
+    </style>
